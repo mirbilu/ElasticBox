@@ -1,0 +1,126 @@
+/*主体设置*/
+
+table {
+    text-align: center;
+    margin: 0 auto;
+}
+
+td {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+th {
+    background-color: #EEEEEE;
+}
+
+
+/*正常盒子和怪异盒子对比设置*/
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    border: 20px solid black;
+    padding: 50px;
+    margin: 50px;
+    display: inline-block;
+    text-align: center;
+}
+
+#normal_box {
+    -webkit-box-sizing: content-box;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+#eccentric_box {
+    -webkit-box-sizing: border-box;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+
+/*弹性盒子水平分栏*/
+
+.con {
+    display: -webkit-flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 500px;
+    height: 400px;
+}
+
+
+/*弹性盒子垂直分栏*/
+
+.con1 {
+    display: -webkit-flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 500px;
+    height: 400px;
+}
+
+
+/*排序（flex）*/
+
+.con2 {
+    display: -webkit-flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 500px;
+    height: 400px;
+}
+
+
+/*cloumn分栏*/
+
+.flex_colomn {
+    height: 400px;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 10px solid #090;
+}
+
+.first {
+    background: red;
+    order: 2;
+    -webkit-flex: 1;
+}
+
+.second {
+    background: blue;
+    order: 4;
+    -webkit-flex: 2;
+}
+
+.third {
+    background: yellow;
+    order: 1;
+    -webkit-flex: 3;
+}
+
+.forth {
+    background: green;
+    order: 3;
+    -webkit-flex: 3;
+}
+
+
+/*旧版弹性盒子居中布局设置*/
+
+.center {
+    width: 300px;
+    height: 300px;
+    background: blue;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+img {
+    width: 100px;
+}
